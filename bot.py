@@ -20,14 +20,3 @@ def main():
         chat_id=CHANNEL_ID,
         text=f"Day {day:03d}"
     )
-
-    bot.send_animation(
-        chat_id=CHANNEL_ID,
-        animation=GIF_URL
-    )
-
-    with open(day_file, "w") as f:
-        f.write(str(day + 1))
-
-if __name__ == "__main__":
-    main()
